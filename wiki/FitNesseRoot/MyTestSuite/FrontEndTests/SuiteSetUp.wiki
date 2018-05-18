@@ -13,6 +13,8 @@ Stopping the browser is done in SuiteTearDown, which is done after all tests in 
 |nl.hsac.fitnesse.fixture.slim.web|
 
 
+!*> !style_blue('''Background scenario''') !style_green('''om een browser te starten''')
 |script          |selenium driver setup|
 |start driver for|chrome               |
 |show            |driver description   |
+*!

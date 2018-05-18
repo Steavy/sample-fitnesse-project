@@ -1,0 +1,10 @@
+!|scenario|als ik inlog op de adactin website met username|username|en password|password|
+|open     |http://adactin.com/HotelApp/                                                 |
+|check    |page title                                     |=~/.*Hotel*/                 |
+|enter    |@username                                      |as      |id=username         |
+|enter    |@password                                      |as      |id=password         |
+|click    |id=login                                                                     |
+
+!|scenario|dan controleer ik of ik|naam                                           |zie en|aantal|keer voorkomt|
+|check    |value of               |xpath=(//*[contains(text(), '@naam')])[@aantal]|Hotels                     |
+
